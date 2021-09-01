@@ -1,4 +1,4 @@
 git init // khởi tạo git cho thư mục. Phải làm khi bắt đầu dự án
 git status // xem trạng thái của git ở thư mục đang đứng
 git add // thêm file vào nhưng file sẽ commit
-git commit // commit những file thay đổi
+git commit -m "message to commit" // commit những file thay đổi
