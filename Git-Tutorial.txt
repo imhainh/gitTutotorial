@@ -4,4 +4,5 @@ git add // thêm file vào nhưng file sẽ commit
 git commit -m "message to commit" // commit những file thay đổi
 
 git log // xem lịch sử commit
-git show // xem chi tiết 1 commit với id commit truyền vào.
+git show // xem chi tiết 1 commit (thay đổi ntn...) với id commit truyền vào.
+git diff // xem nội dung đã thay đổi của các file đc modified và chưa được add và commit
