@@ -10,5 +10,6 @@ git diff // xem nội dung đã thay đổi của các file đc modified và ch�
 // working directory : là thư mục làm việc (thư mục code)
 // staging area : khi chạy lênh "git add" thì file ở working directory sẽ đc add vào đây.
 // git repository : khi chạy lệnh "git commit" thì các file ở staging area sẽ đc commit và lưu ở đây.
+gitk // mở giao diện GUI của git để xem các commit
 
 
