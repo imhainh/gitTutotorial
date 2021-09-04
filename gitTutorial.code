@@ -1,0 +1,34 @@
+// -working directory : là thư mục làm việc (thư mục code)
+// -staging area : khi chạy lênh "git add" thì file ở working directory sẽ đc add vào đây.
+// -git repository : khi chạy lệnh "git commit" thì các file ở staging area sẽ đc commit và lưu ở đây.
+
+#gitk // mở giao diện GUI của git để xem các commit
+
+#git init // khởi tạo git cho thư mục. Phải làm khi bắt đầu dự án
+#git status // xem trạng thái của git ở thư mục đang đứng
+#git add // thêm file vào nhưng file sẽ commit
+#git commit -m "message to commit" // commit những file thay đổi
+
+#git log // xem lịch sử commit
+#git show // xem chi tiết 1 commit (thay đổi ntn...) với id commit truyền vào.
+#git diff // xem nội dung đã thay đổi của các file đc modified và chưa được add và commit
+
+
+#git restore <file> // loại bỏ các thay đổi của file khi chua đc add vào staging
+#git restore --staged <file> // sửa trạng thái file đã đc add vào staging area về working directory
+
+#git checkout -b <branch> // branching: tạo nhánh mới và checkout branch hiện tại
+#git checkout <branch> // chuyển sang branch khác đã tồn tại.
+#git merge <branch> // ghép 1 nhánh khác vào nhánh hiện tại đang ở.
+#git branch // xem tất cả các nhánh
+#git branch -D <branch> // xóa branch với tên <branch> truyền vào
+
+// undo commit dùng git reset
+#git reset --soft <to_commit> // reset commit hiện tại về commit khác với id truyền đc vào và 
+                            // các thay đổi ở commit hiện tại so với commit cũ sẽ trở về 
+                            // trạng thái trước khi commit(trang thái staging arial)
+#git reset --mixed <to_commit>// reset commit hiện tại về commit khác với id truyền đc vào và
+                            // các thay đổi ở commit hiện tại so với commit cũ sẽ trở về 
+                            // trạng thái trước khi #git add (trang thái working directory)
+#git reset --hard <to_commit>// reset commit hiện tại về commit khác với id truyền đc vào và
+                            // các thay đổi ở commit hiện tại so với commit cũ sẽ BỊ XÓA HẾT
