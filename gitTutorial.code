@@ -35,5 +35,5 @@
 
 // git revert : nguy hiểm dễ mất dữ liệu.
 #git revert <commit> // sẽ tạo và thêm 1 commit mới đảo ngược lại các thay đổi ở commit đc truyền vào.
-                    // commit đc truyền vào và các commit khác vẫn giữ nguyên.
+                    // các commit khác không liên quan vẫn giữ nguyên, các file thay đổi CÓ THỂ BỊ CONFLICTS
 
