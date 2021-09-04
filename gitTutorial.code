@@ -25,10 +25,13 @@
 
 // undo commit dùng git reset
 #git reset --soft <to_commit> // reset commit hiện tại về commit khác với id truyền đc vào và 
-                            // các thay đổi ở commit hiện tại so với commit cũ sẽ trở về 
-                            // trạng thái trước khi commit(trang thái staging arial)
+                            // các thay đổi ở commit hiện tại so với commit cũ sẽ ĐƯỢC GIỮ NGUYÊN
+                            // và trạng thái các file đổi thành trước khi commit(trang thái staging arial)
 #git reset --mixed <to_commit>// reset commit hiện tại về commit khác với id truyền đc vào và
-                            // các thay đổi ở commit hiện tại so với commit cũ sẽ trở về 
-                            // trạng thái trước khi #git add (trang thái working directory)
+                            // các thay đổi ở commit hiện tại so với commit cũ sẽ ĐƯỢC GIỮ NGUYÊN
+                            // trạng thái các file đổi thành trước khi #git add (trang thái working directory)
 #git reset --hard <to_commit>// reset commit hiện tại về commit khác với id truyền đc vào và
                             // các thay đổi ở commit hiện tại so với commit cũ sẽ BỊ XÓA HẾT
+
+
+                            
