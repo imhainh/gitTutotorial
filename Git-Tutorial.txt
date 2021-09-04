@@ -19,6 +19,6 @@ git restore --staged <file> // cách viết mới của git reset
 git checkout -b <branch> // branching: tạo nhánh mới và checkout branch hiện tại
 git checkout <branch> // chuyển sang branch khác đã tồn tại.
 git merge <branch> // ghép 1 nhánh khác vào nhánh hiện tại đang ở.
-git branch // xem các nhánh
+git branch // xem tất cả các nhánh
 git branch -D <branch> // xóa branch với tên <branch> truyền vào
 
