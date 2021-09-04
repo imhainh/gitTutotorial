@@ -21,3 +21,6 @@ git merge <branch> // ghép 1 nhánh khác vào nhánh hiện tại đang ở.
 git branch // xem tất cả các nhánh
 git branch -D <branch> // xóa branch với tên <branch> truyền vào
 
+git reset --soft <to_commit>
+git reset --mixed <to_commit>
+git reset --hard <to_commit>
