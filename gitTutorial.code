@@ -1,6 +1,7 @@
 // -working directory : là thư mục làm việc (thư mục code)
 // -staging area : khi chạy lênh "git add" thì file ở working directory sẽ đc add vào đây.
 // -git repository : khi chạy lệnh "git commit" thì các file ở staging area sẽ đc commit và lưu ở đây.
+// file .gitignore : ghi lại các file/thư mục mà không muốn commit
 
 #gitk // mở giao diện GUI của git để xem các commit
 
@@ -33,7 +34,7 @@
 #git reset --hard <to_commit>// reset commit hiện tại về commit khác với id truyền đc vào và
                             // các thay đổi ở commit hiện tại so với commit cũ sẽ BỊ XÓA HẾT
 
-// git revert : nguy hiểm dễ mất dữ liệu.
+// git revert : nguy hiểm dễ mất dữ liệu. Tránh sử dụng
 #git revert <commit> // sẽ tạo và thêm 1 commit mới đảo ngược lại các thay đổi ở commit đc truyền vào.
                     // các commit khác không liên quan vẫn giữ nguyên, các file thay đổi CÓ THỂ BỊ CONFLICTS
 
