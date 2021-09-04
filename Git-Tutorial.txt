@@ -17,8 +17,9 @@ git restore <file> // cách viết mới của git checkout
 git reset <file> // sửa trạng thái file đã đc add vào staging area về working directory
 git restore --staged <file> // cách viết mới của git reset
 
-git checkout -b <branch> // branching: tạo nhánh mới
-git checkout <branch>
-git merge // ghép 2 nhánh với nhau
+git checkout -b <branch> // branching: tạo nhánh mới và checkout branch hiện tại
+git checkout <branch> // chuyển sang branch khác đã tồn tại.
+git merge <branch> // ghép 1 nhánh khác vào nhánh hiện tại đang ở.
 git branch // xem các nhánh
+git branch -D <branch> // xóa branch với tên <branch> truyền vào
 
