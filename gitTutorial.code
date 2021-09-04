@@ -33,5 +33,7 @@
 #git reset --hard <to_commit>// reset commit hiện tại về commit khác với id truyền đc vào và
                             // các thay đổi ở commit hiện tại so với commit cũ sẽ BỊ XÓA HẾT
 
+// git revert : nguy hiểm dễ mất dữ liệu.
+#git revert <commit> // sẽ tạo và thêm 1 commit mới đảo ngược lại các thay đổi ở commit đc truyền vào.
+                    // commit đc truyền vào và các commit khác vẫn giữ nguyên.
 
-                            
