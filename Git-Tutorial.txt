@@ -13,8 +13,7 @@ git diff // xem nội dung đã thay đổi của các file đc modified và ch�
 gitk // mở giao diện GUI của git để xem các commit
 
 git restore <file> // loại bỏ các thay đổi của file khi chua đc add vào staging
-git reset <file> // sửa trạng thái file đã đc add vào staging area về working directory
-git restore --staged <file> // cách viết mới của git reset
+git restore --staged <file> // sửa trạng thái file đã đc add vào staging area về working directory
 
 git checkout -b <branch> // branching: tạo nhánh mới và checkout branch hiện tại
 git checkout <branch> // chuyển sang branch khác đã tồn tại.
