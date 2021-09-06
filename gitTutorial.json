@@ -38,3 +38,11 @@
 #git revert <commit> // sẽ tạo và thêm 1 commit mới đảo ngược lại các thay đổi ở commit đc truyền vào.
                     // các commit khác không liên quan vẫn giữ nguyên, các file thay đổi CÓ THỂ BỊ CONFLICTS
 
+// Git Hub.
+git remote -v // xem các remote repository. (các repo ở máy chủ github)
+git remote remove <name> // xóa 1 remote repo với tên truyền vào. vd: git remote remove orgin
+
+git remote add origin https://github.com/imhainh/gitTutotorial.git // thêm origin remote repository của github vào.
+git push -u origin master // dùng lần đầu để push code nhánh master lên remote repository. các lần sau chỉ cần git push.
+git push // đẩy code lên remote repository(git hub repository).
+
