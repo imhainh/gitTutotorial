@@ -56,11 +56,11 @@ git config --global credential.helper "cache --timeout=18000" // lưu mật kh�
 #git pull // lấy code từ remote repo về
 
 // Pull request
-//1. git checkout -b <feature_branch>
-//2. git push origin <branch>
-//3. create a pull request on Github
-//4. review code
- //   4.1 review code online (github)
- //   4.2 fetch branch into local to test offline (optional)
- //   4.3 approve the pull request
-//5. merege to master
+1. git checkout -b <feature_branch> // checkout branch hiện tại, tạo vào chuyển vào branch mới
+2. git push origin <branch> // push lên <branch> lên github, nếu chưa có <branch> thì sẽ tự tạo.
+3. create a pull request on Github
+4. review code
+   4.1 review code online (github)
+   4.2 fetch branch into local to test offline (optional)
+   4.3 approve the pull request
+5. merege to master
