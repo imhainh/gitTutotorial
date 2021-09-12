@@ -58,7 +58,7 @@ git config --global credential.helper "cache --timeout=18000" // lưu mật kh�
 // Pull request
 1. git checkout -b <feature_branch> // checkout branch hiện tại, tạo vào chuyển vào branch mới
     // nên đặt tên theo format <feature/branch_name>
-2. git push origin <branch> // push branch <branch> tạo ở local lên github. ko bao gồm các sửa đổi ở code.
+2. git push origin <branch> // push branch <branch> tạo ở local lên github. sẽ push code nếu đã có branch
 3. create a pull request on Github
 4. review code
    4.1 review code online (github)
