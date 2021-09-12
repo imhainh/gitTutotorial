@@ -45,4 +45,22 @@ git remote remove <name> // xóa 1 remote repo với tên truyền vào. vd: git
 git remote add origin https://github.com/imhainh/gitTutotorial.git // thêm origin remote repository của github vào.
 git push -u origin master // dùng lần đầu để push code nhánh master lên remote repository. các lần sau chỉ cần git push.
 git push // đẩy code lên remote repository(git hub repository).
+git pull // lấy code từ remote repo về
 
+//lưu mật khẩu
+git config --global crenential.helper store // not recommend (~/.git-credentials mật khẩu sẽ lưu ở file này dạng clear text)
+git config --global credential.helper "cache --timeout=18000" // lưu mật khẩu vào ram, phải gõ lại pass khi time out
+// google "gnome-keyring" "git ssh"
+
+#git clone <link>//tải về  1 repo mới trên git hub. (người mới bắt đầu làm chưa có repo của project)
+#git pull // lấy code từ remote repo về
+
+// Pull request
+//1. git checkout -b <feature_branch>
+//2. git push origin <branch>
+//3. create a pull request on Github
+//4. review code
+ //   4.1 review code online (github)
+ //   4.2 fetch branch into local to test offline (optional)
+ //   4.3 approve the pull request
+//5. merege to master
