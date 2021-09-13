@@ -93,7 +93,7 @@ method 2: (khuyến khích nên sử dụng cách này)
         - pull về code mới nhất của branch làm chung (master)
         - checkout về branch của mình và merge code từ master vào
         - sửa conflict và lưu lại
-        - commit và push đã sửa lên.
+        - commit và push code đã sửa lên.
     2. resolve conflict
         2.1 #git checkout master //checkout sang branch master.
         2.2 #git pull //pull về code mới nhất cho master.
