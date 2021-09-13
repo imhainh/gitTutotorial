@@ -70,3 +70,40 @@ git config --global credential.helper "cache --timeout=18000" // lưu mật kh�
             # git branch -D <branch-name>
    4.3 approve the pull request
 5. merege to master
+
+15. Resolve conflicts // fix nếu code bị conflict.
+when will conflicts happen?
+    1. Changing the same file + same line
+    2. A deleted file X B modified file X
+
+Method 1:
+    1. Using "git rebase" // giống như là checkout lại cho branch mới(vẫn giữ code đã làm) từ branch master(hoặc branch gốc)
+    2. Resolve conflict
+        2.0 đảm bảo đang đứng ở đúng branch cần rebase(sửa conflict) và pull về code mới nhất.
+        2.1 #git rebase master // rebase vào master từ branch đang đứng.
+        2.2 sửa lại file bị conflict và save.
+        2.3 git add <file bị confict>.
+        2.4 git rebase --continue
+    3. Push again with -f
+        #git push origin <branch-name> -f // push code đã resovle conflict lên origin, bắt buộc phải có -f
+                                        //(không nên dùng -f để push lên các branch nhiều người cùng làm như master)
+method 2: (khuyến khích nên sử dụng cách này)
+    1. Merge updated master to feature branch (3-way merge)
+        các bước thực hiện:
+        - pull về code mới nhất của branch làm chung (master)
+        - checkout về branch của mình và merge code từ master vào
+        - sửa conflict và lưu lại
+        - commit và push đã sửa lên.
+    2. resolve conflict
+        2.1 #git checkout master //checkout sang branch master.
+        2.2 #git pull //pull về code mới nhất cho master.
+        2.3 #git checkout <branch-feature-name> // chuyển sang branch đang làm (branch bị conflict)
+        2.4 #git merge master // merge code mới nhất của master vào branch đang conflict
+        2.5 sửa lại file bị conflict.
+    3. commit and push
+        3.1 #git add <file-name> // add file đã sửa conflic
+        3.2 #git commit -m "comment here" // commit file đã sửa conflic
+        3.3 #git push origin <branch-feature-name> // push <branch-feature-name> với code mới nhất và đã sửa conflict lên origin.
+        3.4 tiến hành merge pull request.
+
+    
