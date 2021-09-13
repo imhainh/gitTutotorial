@@ -63,5 +63,10 @@ git config --global credential.helper "cache --timeout=18000" // lưu mật kh�
 4. review code
    4.1 review code online (github)
    4.2 fetch branch into local to test offline (optional)
+        // tải và review code on local
+        4.2.1 #git fetch origin <branch-name> // tải code của 1 branch về.
+        4.2.2 check out sang branch mới tải và review, chạy thử  code.
+        4.2.3 thông báo cho team và xóa branch trên local.
+            # git branch -D <branch-name>
    4.3 approve the pull request
 5. merege to master
